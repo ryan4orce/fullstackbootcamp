@@ -2,17 +2,6 @@
 
 .. toctree::
   :maxdepth: 2
-  :caption: Why Nutanix
-  :name: _why_nutanix
-  :hidden:
-
-  what_is_nutanix/what_is_nutanix
-  nutanix_terminology/nutanix_terminology
-  backup_and_dr/backup_and_dr
-  monitoring_and_managing_env/monitoring_and_managing_env
-
-.. toctree::
-  :maxdepth: 2
   :caption: Nutanix Prism with AHV
   :name: _nutanix_prism_with_ahv
   :hidden:
@@ -29,7 +18,6 @@
 
   lab_deploy_workloads/lab_deploy_workloads
   lab_manage_workloads/lab_manage_workloads
-  what_is_calm/what_is_calm
   calm_enable/calm_enable
   calm_sshkey_creation/calm_sshkey_creation
   calm_mysql_blueprint/calm_mysql_blueprint
@@ -50,7 +38,6 @@
   :name: _nutanix_flow
   :hidden:
 
-  what_is_flow/what_is_flow
   flow_enable/flow_enable
   flow_quarantine_vm/flow_quarantine_vm
   flow_isolate_environments/flow_isolate_environments
