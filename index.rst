@@ -21,6 +21,7 @@
   calm_enable/calm_enable
   calm_sshkey_creation/calm_sshkey_creation
   calm_mysql_blueprint/calm_mysql_blueprint
+  calm_windows_blueprint/calm_windows_blueprint
 
 
 .. toctree::
@@ -67,7 +68,7 @@ What's New
 ++++++++++
 
 - Workshop updated for the following software versions:
-    - AOS & PC 5.8.1
+    - AOS & PC 5.8.1 on AHV
 
 - Optional Lab Updates:
     - Calm
