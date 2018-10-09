@@ -19,7 +19,6 @@
   lab_deploy_workloads/lab_deploy_workloads
   lab_manage_workloads/lab_manage_workloads
   calm_enable/calm_enable
-  calm_sshkey_creation/calm_sshkey_creation
   calm_mysql_blueprint/calm_mysql_blueprint
   calm_windows_blueprint/calm_windows_blueprint
 
@@ -32,7 +31,6 @@
 
   calm_3twa_blueprint/calm_3twa_blueprint
 
-
 .. toctree::
   :maxdepth: 2
   :caption: Nutanix Flow
@@ -44,6 +42,14 @@
   flow_isolate_environments/flow_isolate_environments
   flow_secure_app/flow_secure_app
   flow_visualization/flow_visualization
+
+.. toctree::
+  :maxdepth: 2
+  :caption: Optional Labs
+  :name: _optional_labs
+  :hidden:
+
+  calm_sshkey_creation/calm_sshkey_creation
 
 .. toctree::
   :maxdepth: 2
