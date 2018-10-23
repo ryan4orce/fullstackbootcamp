@@ -4,7 +4,7 @@
   :maxdepth: 2
   :caption: Nutanix Enterprise Cloud - The Dream (Day 1)
   :name: _nutanix_enterprise_cloud_the_dream_day1
-  :hidden:
+
 
 .. toctree::
   :maxdepth: 2
@@ -42,7 +42,7 @@
   :maxdepth: 2
   :caption: Nutanix Enterprise Cloud - The Dream (Day 2)
   :name: _nutanix_enterprise_cloud_the_dream_day2
-  :hidden:
+  
 
 .. toctree::
   :maxdepth: 2
