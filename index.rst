@@ -1,7 +1,5 @@
 .. title:: Nutanix Enterprise Cloud - The Dream
 
-Nutanix Enterprise Cloud - The Dream (Day 1)
-
 .. toctree::
   :maxdepth: 2
   :caption: Nutanix Prism with AHV
@@ -32,8 +30,6 @@ Nutanix Enterprise Cloud - The Dream (Day 1)
   flow_isolate_environments/flow_isolate_environments
   flow_secure_app/flow_secure_app
   flow_visualization/flow_visualization
-
-Nutanix Enterprise Cloud - The Dream (Day 2)
 
 .. toctree::
   :maxdepth: 2
@@ -90,15 +86,20 @@ What's New
     - Calm
     - Flow
 
-Agenda
-++++++
+Agenda (Day 1)
+++++++++++++++
 
 - Introductions
 - Why Nutanix
 - Nutanix Prism with AHV
 - Deploying and Managing Workloads
+- Flow
+
+Agenda (Day 2)
+++++++++++++++
+
+- Deploying and Managing Workloads with Calm
 - Full Application with Calm
-- Nutanix Flow
 
 Introductions
 +++++++++++++
