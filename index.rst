@@ -42,25 +42,25 @@
   :maxdepth: 2
   :caption: Nutanix Enterprise Cloud - The Dream (Day 2)
   :name: _nutanix_enterprise_cloud_the_dream_day2
-  
 
-.. toctree::
-  :maxdepth: 2
-  :caption: Deploying and Managing Workloads with Calm
-  :name: _deploying_and_managing_workloads_with_calm
-  :hidden:
 
-  calm_enable/calm_enable
-  calm_mysql_blueprint/calm_mysql_blueprint
-  calm_windows_blueprint/calm_windows_blueprint
+  .. toctree::
+    :maxdepth: 2
+    :caption: Deploying and Managing Workloads with Calm
+    :name: _deploying_and_managing_workloads_with_calm
+    :hidden:
 
-.. toctree::
-  :maxdepth: 2
-  :caption: Full Application with Calm
-  :name: _full_application_with_calm
-  :hidden:
+    calm_enable/calm_enable
+    calm_mysql_blueprint/calm_mysql_blueprint
+    calm_windows_blueprint/calm_windows_blueprint
 
-  calm_3twa_blueprint/calm_3twa_blueprint
+  .. toctree::
+    :maxdepth: 2
+    :caption: Full Application with Calm
+    :name: _full_application_with_calm
+    :hidden:
+
+    calm_3twa_blueprint/calm_3twa_blueprint
 
 
 
