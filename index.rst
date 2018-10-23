@@ -2,6 +2,12 @@
 
 .. toctree::
   :maxdepth: 2
+  :caption: Nutanix Enterprise Cloud - The Dream (Day 1)
+  :name: _nutanix_enterprise_cloud_the_dream_day1
+  :hidden:
+
+.. toctree::
+  :maxdepth: 2
   :caption: Nutanix Prism with AHV
   :name: _nutanix_prism_with_ahv
   :hidden:
@@ -18,18 +24,6 @@
 
   lab_deploy_workloads/lab_deploy_workloads
   lab_manage_workloads/lab_manage_workloads
-  calm_enable/calm_enable
-  calm_mysql_blueprint/calm_mysql_blueprint
-  calm_windows_blueprint/calm_windows_blueprint
-
-
-.. toctree::
-  :maxdepth: 2
-  :caption: Full Application with Calm
-  :name: _full_application_with_calm
-  :hidden:
-
-  calm_3twa_blueprint/calm_3twa_blueprint
 
 .. toctree::
   :maxdepth: 2
@@ -42,6 +36,33 @@
   flow_isolate_environments/flow_isolate_environments
   flow_secure_app/flow_secure_app
   flow_visualization/flow_visualization
+
+
+.. toctree::
+  :maxdepth: 2
+  :caption: Nutanix Enterprise Cloud - The Dream (Day 2)
+  :name: _nutanix_enterprise_cloud_the_dream_day2
+  :hidden:
+
+.. toctree::
+  :maxdepth: 2
+  :caption: Deploying and Managing Workloads with Calm
+  :name: _deploying_and_managing_workloads_with_calm
+  :hidden:
+
+  calm_enable/calm_enable
+  calm_mysql_blueprint/calm_mysql_blueprint
+  calm_windows_blueprint/calm_windows_blueprint
+
+.. toctree::
+  :maxdepth: 2
+  :caption: Full Application with Calm
+  :name: _full_application_with_calm
+  :hidden:
+
+  calm_3twa_blueprint/calm_3twa_blueprint
+
+
 
 .. toctree::
   :maxdepth: 2
