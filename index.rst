@@ -21,6 +21,15 @@
 
 .. toctree::
   :maxdepth: 2
+  :caption: Nutanix Files
+  :name: _deploying_and_managing_workloads
+  :hidden:
+
+  files_smb_share/files_smb_share
+  files_nfs_export/files_nfs_export
+
+.. toctree::
+  :maxdepth: 2
   :caption: Nutanix Flow
   :name: _nutanix_flow
   :hidden:
@@ -55,6 +64,7 @@
   :name: _optional_labs
   :hidden:
 
+  files_deploy/files_deploy
   calm_sshkey_creation/calm_sshkey_creation
 
 .. toctree::
