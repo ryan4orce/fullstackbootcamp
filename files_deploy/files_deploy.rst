@@ -20,7 +20,7 @@ In **Prism > File Server**, click **+ File Server**.
 
 .. figure:: images/files_deploy_001.png
 
-The Files 3.1.0.1 package has already been uploaded and the Data Services IP has been configured as 10.21.XXX.38. Click **Continue**.
+The Files 3.1.0.1 package has already been uploaded and the Data Services IP has been configured as **See Whiteboard**. Click **Continue**.
 
 .. figure:: images/files_deploy_002.png
 

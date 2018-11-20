@@ -2,6 +2,14 @@
 
 .. toctree::
   :maxdepth: 2
+  :caption: Day One
+  :name: _day_one
+  :hidden:
+
+  day_one_agenda/day_one_agenda
+
+.. toctree::
+  :maxdepth: 2
   :caption: Nutanix Prism with AHV
   :name: _nutanix_prism_with_ahv
   :hidden:
@@ -16,7 +24,8 @@
   :name: _deploying_and_managing_workloads
   :hidden:
 
-  lab_deploy_workloads/lab_deploy_workloads
+  lab_deploy_windows_workloads/lab_deploy_windows_workloads
+  lab_deploy_linux_workloads/lab_deploy_linux_workloads
   lab_manage_workloads/lab_manage_workloads
 
 .. toctree::
@@ -40,13 +49,21 @@
   flow_secure_app/flow_secure_app
   flow_visualization/flow_visualization
 
+  .. toctree::
+    :maxdepth: 2
+    :caption: Day Two
+    :name: _day_two
+    :hidden:
+
+    day_two_agenda/day_two_agenda
+
 .. toctree::
   :maxdepth: 2
   :caption: Deploying and Managing Workloads with Calm
   :name: _deploying_and_managing_workloads_with_calm
   :hidden:
 
-  calm_enable/calm_enable
+  calm_projects/calm_projects
   calm_mysql_blueprint/calm_mysql_blueprint
   calm_windows_blueprint/calm_windows_blueprint
 
@@ -64,7 +81,9 @@
   :name: _optional_labs
   :hidden:
 
+  lab_image_service/lab_image_service
   files_deploy/files_deploy
+  calm_enable/calm_enable
   calm_sshkey_creation/calm_sshkey_creation
 
 .. toctree::
