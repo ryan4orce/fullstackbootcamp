@@ -67,6 +67,10 @@ Select the **NFS-Client-*intials* ** VM and click **Power on**.
 Install NFS Client & Mount NFS Export
 .....................................
 
+.. note::
+
+  Instructor may have different **File Server** Name If So, see whiteboard.
+
 Locate your VM, click **Launch Console** and log in as **root** or connect via SSH.
 
 Execute the following:

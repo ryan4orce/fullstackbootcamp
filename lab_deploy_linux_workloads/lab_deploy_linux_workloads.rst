@@ -49,4 +49,4 @@ Click **Save** to create the VM.
 Takeaways
 +++++++++
 
-- In this lab you saw how simple it is to deploy a Linux VM and a Windows VM.
+- In this lab you saw how simple it is to deploy a Linux VM.

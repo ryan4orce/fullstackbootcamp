@@ -68,6 +68,7 @@ Connecting to SMB Share
 
   You can use any Windows VM joined to the ntnxlab.local domain to complete the following steps.
 
+  Instructor may have different **File Server** Name If So, see whiteboard.
 
 Log into your Windows VM console, and open ``\\*intials*-Files.ntnxlab.local\`` in **File Explorer**.
 

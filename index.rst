@@ -43,19 +43,18 @@
   :name: _nutanix_flow
   :hidden:
 
-  flow_enable/flow_enable
   flow_quarantine_vm/flow_quarantine_vm
   flow_isolate_environments/flow_isolate_environments
   flow_secure_app/flow_secure_app
   flow_visualization/flow_visualization
 
-  .. toctree::
-    :maxdepth: 2
-    :caption: Day Two
-    :name: _day_two
-    :hidden:
+.. toctree::
+  :maxdepth: 2
+  :caption: Day Two
+  :name: _day_two
+  :hidden:
 
-    day_two_agenda/day_two_agenda
+  day_two_agenda/day_two_agenda
 
 .. toctree::
   :maxdepth: 2
@@ -83,6 +82,7 @@
 
   lab_image_service/lab_image_service
   files_deploy/files_deploy
+  flow_enable/flow_enable
   calm_enable/calm_enable
   calm_sshkey_creation/calm_sshkey_creation
 

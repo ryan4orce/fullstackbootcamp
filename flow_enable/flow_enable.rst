@@ -87,7 +87,7 @@ Select the **flow-<your_initials>-1** VM and click **Actions > Clone**.
 
 Select the five newly created Flow VMs and click **Actions > Power on**.
 
-.. figure:: images/flow_vms_2.png
+.. figure:: images/flow_vms.png
 
 Takeaways
 +++++++++

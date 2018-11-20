@@ -97,4 +97,4 @@ After the installation completes, the Windows install ISO can be unmounted and t
 Takeaways
 +++++++++
 
-- In this lab you saw how simple it is to deploy a Linux VM and a Windows VM.
+- In this lab you saw how simple it is to deploy a Windows VM.
