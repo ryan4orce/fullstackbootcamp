@@ -122,6 +122,7 @@ Agenda (Day 1)
 - Why Nutanix
 - Nutanix Prism with AHV
 - Deploying and Managing Workloads
+- Files
 - Flow
 
 Agenda (Day 2)

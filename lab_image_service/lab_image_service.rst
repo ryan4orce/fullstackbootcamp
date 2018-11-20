@@ -1,13 +1,13 @@
-.. _lab_deploy_workloads:
+.. _lab_image_service:
 
 -------------------------
-Lab - Deploying Workloads
+Lab - Image Service
 -------------------------
 
 Overview
 ++++++++
 
-Learn about basic VM deployment.
+Learn about Image Service uploads.
 
 Image Configuration
 +++++++++++++++++++
