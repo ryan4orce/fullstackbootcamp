@@ -18,7 +18,7 @@ Configuring NFS Export
 
 In **Prism > File Server**, click **+ Share/Export**. Fill out the following fields and click **Next**:
 
-  - **Name** - logs
+  - **Name** - logs-*intials*
   - **Protocol** - NFS
   - **Share/Export Type** - Non-Sharded Directories
 
@@ -89,24 +89,24 @@ Execute the following:
     tmpfs                           1.9G     0  1.9G   0% /sys/fs/cgroup
     /dev/sda1                       494M  141M  353M  29% /boot
     tmpfs                           377M     0  377M   0% /run/user/0
-    *intials*-Files.ntnxlab.local:/             1.0T  7.0M  1.0T   1% /afsmnt
+    *intials*-Files.ntnxlab.local:/             1.0T  7.0M  1.0T   1% /filesmnt
     [root@CentOS ~]# ls -l /filesmnt/
     total 1
-    drwxrwxrwx. 2 root root 2 Mar  9 18:53 logs
+    drwxrwxrwx. 2 root root 2 Mar  9 18:53 logs-*intials*
 
-Observe that the **logs** directory is mounted in ``/filesmnt/logs``.
+Observe that the **logs** directory is mounted in ``/filesmnt/logs-*intials*``.
 
 Reboot the VM and observe the export is no longer mounted. To persist the mount, add it to ``/etc/fstab`` by executing the following:
 
   .. code-block:: bash
 
-    echo '*intials*-Files.ntnxlab.local:/logs /filesmnt nfs4' >> /etc/fstab
+    echo '*intials*-Files.ntnxlab.local:/logs-*intials* /filesmnt nfs4' >> /etc/fstab
 
-The following command will add 100 2MB files filled with random data to ``/afsmnt/logs``:
+The following command will add 100 2MB files filled with random data to ``/filesmnt/logs``:
 
   .. code-block:: bash
 
-    for i in {1..100}; do dd if=/dev/urandom bs=8k count=256 of=/filesmnt/logs/file$i; done
+    for i in {1..100}; do dd if=/dev/urandom bs=8k count=256 of=/filesmnt/logs-*intials*/file$i; done
 
 Return to **Prism > File Server > Share > logs** to monitor performance and usage.
 

@@ -18,7 +18,7 @@ Configuring SMB Home Share
 
 In **Prism > File Server**, click **+ Share/Export**. Fill out the following fields and click **Next**:
 
-  - **Name** - marketing
+  - **Name** - marketing-*intials*
   - **Protocol** - SMB
   - **Share/Export Type** - General Purpose Share
 
