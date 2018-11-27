@@ -2,6 +2,14 @@
 
 .. toctree::
   :maxdepth: 2
+  :caption: Day One
+  :name: _day_one
+  :hidden:
+
+  day_one_agenda/day_one_agenda
+
+.. toctree::
+  :maxdepth: 2
   :caption: Nutanix Prism with AHV
   :name: _nutanix_prism_with_ahv
   :hidden:
@@ -16,12 +24,47 @@
   :name: _deploying_and_managing_workloads
   :hidden:
 
-  lab_deploy_workloads/lab_deploy_workloads
+  lab_deploy_windows_workloads/lab_deploy_windows_workloads
+  lab_deploy_linux_workloads/lab_deploy_linux_workloads
   lab_manage_workloads/lab_manage_workloads
-  calm_enable/calm_enable
+
+.. toctree::
+  :maxdepth: 2
+  :caption: Nutanix Files
+  :name: _deploying_and_managing_workloads
+  :hidden:
+
+  files_smb_share/files_smb_share
+  files_nfs_export/files_nfs_export
+
+.. toctree::
+  :maxdepth: 2
+  :caption: Nutanix Flow
+  :name: _nutanix_flow
+  :hidden:
+
+  flow_quarantine_vm/flow_quarantine_vm
+  flow_isolate_environments/flow_isolate_environments
+  flow_secure_app/flow_secure_app
+  flow_visualization/flow_visualization
+
+.. toctree::
+  :maxdepth: 2
+  :caption: Day Two
+  :name: _day_two
+  :hidden:
+
+  day_two_agenda/day_two_agenda
+
+.. toctree::
+  :maxdepth: 2
+  :caption: Deploying and Managing Workloads with Calm
+  :name: _deploying_and_managing_workloads_with_calm
+  :hidden:
+
+  calm_projects/calm_projects
   calm_mysql_blueprint/calm_mysql_blueprint
   calm_windows_blueprint/calm_windows_blueprint
-
 
 .. toctree::
   :maxdepth: 2
@@ -33,22 +76,14 @@
 
 .. toctree::
   :maxdepth: 2
-  :caption: Nutanix Flow
-  :name: _nutanix_flow
-  :hidden:
-
-  flow_enable/flow_enable
-  flow_quarantine_vm/flow_quarantine_vm
-  flow_isolate_environments/flow_isolate_environments
-  flow_secure_app/flow_secure_app
-  flow_visualization/flow_visualization
-
-.. toctree::
-  :maxdepth: 2
   :caption: Optional Labs
   :name: _optional_labs
   :hidden:
 
+  lab_image_service/lab_image_service
+  files_deploy/files_deploy
+  flow_enable/flow_enable
+  calm_enable/calm_enable
   calm_sshkey_creation/calm_sshkey_creation
 
 .. toctree::
@@ -80,15 +115,21 @@ What's New
     - Calm
     - Flow
 
-Agenda
-++++++
+Agenda (Day 1)
+++++++++++++++
 
 - Introductions
 - Why Nutanix
 - Nutanix Prism with AHV
 - Deploying and Managing Workloads
+- Files
+- Flow
+
+Agenda (Day 2)
+++++++++++++++
+
+- Deploying and Managing Workloads with Calm
 - Full Application with Calm
-- Nutanix Flow
 
 Introductions
 +++++++++++++
