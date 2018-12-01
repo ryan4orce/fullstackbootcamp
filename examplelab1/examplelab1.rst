@@ -43,6 +43,8 @@ Select **Enable IP Address Management** and fill out the following fields:
 
 Click **Submit > Save**.
 
+SAVE!
+
 Takeaways
 +++++++++
 
