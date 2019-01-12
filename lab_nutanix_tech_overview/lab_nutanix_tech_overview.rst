@@ -1,7 +1,7 @@
 .. _lab_nutanix_technology_overview:
 
 ---------------------------------
-Lab - Nutanix Tech Overview
+Guide - Nutanix Tech Overview
 ---------------------------------
 
 Overview

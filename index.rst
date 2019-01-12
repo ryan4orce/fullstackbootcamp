@@ -2,19 +2,19 @@
 
 .. toctree::
   :maxdepth: 2
-  :caption: Day One
-  :name: _day_one
+  :caption: Table of Contents
+  :name: _table_of_contents
   :hidden:
 
   day_one_agenda/day_one_agenda
+  lab_nutanix_tech_overview/lab_nutanix_tech_overview
 
 .. toctree::
   :maxdepth: 2
-  :caption: Nutanix Prism with AHV
-  :name: _nutanix_prism_with_ahv
+  :caption: Setting up The Basics
+  :name: _setting_up_the_basics
   :hidden:
 
-  lab_nutanix_tech_overview/lab_nutanix_tech_overview
   lab_storage_configuration/lab_storage_configuration
   lab_network_configuration/lab_network_configuration
 
@@ -50,32 +50,6 @@
 
 .. toctree::
   :maxdepth: 2
-  :caption: Day Two
-  :name: _day_two
-  :hidden:
-
-  day_two_agenda/day_two_agenda
-
-.. toctree::
-  :maxdepth: 2
-  :caption: Deploying and Managing Workloads with Calm
-  :name: _deploying_and_managing_workloads_with_calm
-  :hidden:
-
-  calm_projects/calm_projects
-  calm_mysql_blueprint/calm_mysql_blueprint
-  calm_windows_blueprint/calm_windows_blueprint
-
-.. toctree::
-  :maxdepth: 2
-  :caption: Full Application with Calm
-  :name: _full_application_with_calm
-  :hidden:
-
-  calm_3twa_blueprint/calm_3twa_blueprint
-
-.. toctree::
-  :maxdepth: 2
   :caption: Optional Labs
   :name: _optional_labs
   :hidden:
@@ -101,7 +75,7 @@
 Getting Started
 ---------------
 
-Welcome to the "Nutanix Enterprise Cloud - The Dream" Bootcamp! This workbook accompanies an instructor-led session that introduces Nutanix technologies and many common management tasks. Each section has a lesson and an exercise to give you hands-on practice. The instructor explains the exercises and answers any additional questions that you may have.
+Welcome to the Nutanix Enterprise Cloud OS Bootcamp! This workbook accompanies an instructor-led session that introduces Nutanix technologies and many common management tasks. Each section has a lesson and an exercise to give you hands-on practice. The instructor explains the exercises and answers any additional questions that you may have.
 
 At the end of the bootcamp, attendees should understand the basic concepts and technologies that make up the Nutanix Enterprise Cloud stack and should be well prepared for a hosted or onsite proof-of-concept (POC) engagement.
 

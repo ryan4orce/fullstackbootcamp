@@ -1,9 +1,9 @@
-Agenda (Day 1)
+Agenda
 ++++++++++++++
 
 - Introductions
-- Why Nutanix
-- Nutanix Prism with AHV
+- Why Nutanix? Nutanix 101 Whiteboard Review
+- Nutanix Prism with Any Hypervisor
 - Deploying and Managing Workloads
-- Files
-- Flow
+- Nutanix Files Overview and Labs
+- Nutanix Flow Overview and Labs
