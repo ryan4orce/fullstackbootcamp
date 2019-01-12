@@ -1,7 +1,7 @@
 .. _lab_deploy_windows_workloads:
 
 --------------------------------
-Lab - Deploying Windows Workload
+AHV: Deploying Windows Workload
 --------------------------------
 
 Overview
@@ -20,42 +20,55 @@ Deploy a Windows VM from Prism Central.
 
 In **Prism Central > Explore > VMs**, click **Create VM**.
 
-Fill out the following fields and click **Save**:
+Basic Configuration
+................
+
+Fill out the following fields:
 
 - **Name** - Windows_VM-*initials*
 - **Description** - (Optional) Description for your VM.
 - **vCPU(s)** - 2
 - **Number of Cores per vCPU** - 1
 - **Memory** - 4 GiB
-- Select :fa:`pencil` next to CDROM
-    - **Operation** - Clone from Image Service
-    - **Image** - Windows2012-*initials*
-    - Select **Update**
 
-- Select **+ Add New Disk**
-    - **Type** - DISK
-    - **Operation** - Allocate on Storage Container
-    - **Storage Container** - Default Container
-    - **Size (GiB)** - 30 GiB
-    - Select **Add**
+Configuring the Disks
+................
 
-- Select **+ Add New Disk**
-    - **Type** - CDROM
-    - **Operation** - Clone from Image Service
-    - **Image** - Nutanix VirtIO
-    - Select **Add**
+- 1) Select :fa:`pencil` next to CDROM
+      - **Operation** - Clone from Image Service
+      - **Image** - Windows2012R2.iso*
+      - Select **Update**
+      - IMPORTANT: Select the radio button next to the CDROM under the **"Boot Device"** column!
+
+- 2) Select **+ Add New Disk**
+      - **Type** - CDROM
+      - **Operation** - Clone from Image Service
+      - **Image** - Nutanix VirtIO
+      - Select **Add**
+
+- 3) Select **+ Add New Disk**
+      - **Type** - DISK
+      - **Operation** - Allocate on Storage Container
+      - **Storage Container** - Default Container
+      - **Size (GiB)** - 30 GiB
+      - Select **Add**
+
+Add a vNIC
+................
 
 - Select **Add New NIC**
-    - **VLAN Name** - Primary
-      - Select **Add**
+- **VLAN Name** - Primary
+- Select **Add**
 
 Click **Save** to create the VM.
 
-Now lets power on the VM:
 
-Select the VM, then click **Power On** from the **Actions** drop-down menu.
+Now let's power on the VM:
 
-Next lets open a console session:
+Select the VM, then click **Power On** in blue below the VM table.
+
+
+Next let's open a console session:
 
 Select the VM, then click **Launch Console** from the **Actions** drop-down menu.
 
@@ -72,7 +85,7 @@ Browse the CD, and select the directory that corresponds to the Windows OS being
 
 .. figure:: images/deploy_workloads_06.png
 
-Select the three Nutanix drivers displayed (Press and hold the Ctrl key and select all three drivers):
+Select the three Nutanix drivers displayed **(Press and hold the Ctrl key and select all three drivers):**
 
 - Balloon
 - Ethernet adapter
@@ -97,4 +110,4 @@ After the installation completes, the Windows install ISO can be unmounted and t
 Takeaways
 +++++++++
 
-- In this lab you saw how simple it is to deploy a Windows VM.
+- In this lab you saw how simple it is to deploy a Windows VM from a managed Windows Server ISO in the Image Catalogue.

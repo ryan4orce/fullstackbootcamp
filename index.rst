@@ -50,24 +50,11 @@
 
 .. toctree::
   :maxdepth: 2
-  :caption: Optional Labs
-  :name: _optional_labs
-  :hidden:
-
-  lab_image_service/lab_image_service
-  files_deploy/files_deploy
-  flow_enable/flow_enable
-  calm_enable/calm_enable
-  calm_sshkey_creation/calm_sshkey_creation
-
-.. toctree::
-  :maxdepth: 2
   :caption: Appendix
   :name: _appendix
   :hidden:
 
   appendix/glossary
-  appendix/basics
 
 .. _getting_started:
 
@@ -84,8 +71,9 @@ Agenda
 
 - Introductions
 - Why Nutanix? Nutanix 101 Whiteboard Review
-- Nutanix Prism with Any Hypervisor
-- Deploying and Managing Workloads
+- Nutanix Prism with Any Hypervisor Overview
+- The Basics: Storage and Network Configuration Labs
+- Deploying and Managing Workloads - *Windows OR Linux*
 - Nutanix Files Overview and Labs
 - Nutanix Flow Overview and Labs
 

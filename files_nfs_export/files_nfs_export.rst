@@ -1,7 +1,7 @@
 .. _files_nfs_export:
 
 ------------------------
-Files: Create NFS Export
+Files: Create NFS Export (Linux)
 ------------------------
 
 Overview
@@ -9,60 +9,34 @@ Overview
 
 .. note::
 
-  Estimated time to complete: **1 HOUR**
+  This lab is for **Linux Virtual Machines**
 
-In this exercise you will use Files to configure a NFS share.
+  Ask the Instructor for the name of the File Server, as it has already been created for you.
+
+In this exercise you will use Files to configure an NFS share.
 
 Configuring NFS Export
-++++++++++++++++++++++
++++++++++++++++++++
 
 In **Prism > File Server**, click **+ Share/Export**. Fill out the following fields and click **Next**:
 
-  - **Name** - logs-*intials*
-  - **Protocol** - NFS
-  - **Share/Export Type** - Non-Sharded Directories
+- **Name** - logs-*intials*
+- **Protocol** - NFS
+- **Share/Export Type** - Non-Sharded Directories
 
 .. figure:: images/files_nfs_001.png
 
 Fill out the following fields and click **Create**:
 
-  - **Authentication** - System
-  - **Default Access** - No Access
-  - Select **+ Add Client Exceptions**
-  - **Clients with Read-Write Access** - *<Cluster IP Range>* (ex. 10.21.XX.*)
+- **Authentication** - System
+- **Default Access** - No Access
+- Select **+ Add Client Exceptions**
+- **Clients with Read-Write Access** - *<Cluster IP Range>* (ex. 10.21.XX.*)
 
 .. figure:: images/files_nfs_002.png
 
 Connect to NFS Export
-+++++++++++++++++++++
-
-Linux VM for NFS Client
-.......................
-
-Use the **Linux_VM-*initials* ** VM you created earlier in the "Deploying Workloads" lab.
-
-If you have not deployed a Linux VM, follow this guide to deploy a CentOS7 VM:
-
-In **Prism > VM > Table**, click **+ Create VM**.
-
-Fill out the following fields and click **Save**:
-
-- **Name** - NFS-Client-*intials*
-- **Description** - CentOS VM for testing Files NFS export
-- **vCPU(s)** - 2
-- **Number of Cores per vCPU** - 1
-- **Memory** - 4 GiB
-- Select **+ Add New Disk**
-
-  - **Operation** - Clone from Image Service
-  - **Image** - CentOS7
-  - Select **Add**
-- Select **Add New NIC**
-
-  - **VLAN Name** - Primary
-  - Select **Add**
-
-Select the **NFS-Client-*intials* ** VM and click **Power on**.
++++++++++++++++++++
 
 Install NFS Client & Mount NFS Export
 .....................................
@@ -111,3 +85,8 @@ The following command will add 100 2MB files filled with random data to ``/files
 Return to **Prism > File Server > Share > logs** to monitor performance and usage.
 
 .. figure:: images/files_nfs_003.png
+
+Takeaways
++++++++++
+
+- In this lab, you easily utilized Nutanix Files to create an NFS Share, and mount it in Linux. 

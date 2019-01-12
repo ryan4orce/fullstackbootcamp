@@ -1,13 +1,13 @@
 .. _lab_storage_configuration:
 
 ---------------------------
-Lab - Storage Configuration
+Prism: Storage Configuration
 ---------------------------
 
 Overview
 ++++++++
 
-In this lab we will use Prism to perform a basic container setup.
+In this lab we will use Prism to perform a basic Storage Container setup.
 
 Prism Element Storage Configuration Items
 +++++++++++++++++++++++++++++++++++++++++

@@ -1,13 +1,13 @@
 .. _lab_network_configuration:
 
 ------------------------------
-Lab - Networking Configuration
+Prism: Networking Configuration
 ------------------------------
 
 Overview
 ++++++++
 
-Learn how to set up a network in the cluster using Prism. The networks you create in the steps below provide VMs with connectivity by assigning the appropriate networks for the VMs’ respective NICs.
+Learn how to set up a network in the cluster using Prism Element. The networks you create in the steps below provide VMs with connectivity by assigning the appropriate networks for the VMs’ respective NICs.
 
 AHV Networking Background
 +++++++++++++++++++++++++

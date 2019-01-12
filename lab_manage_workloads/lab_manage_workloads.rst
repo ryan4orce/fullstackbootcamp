@@ -1,7 +1,7 @@
 .. _lab_manage_workloads:
 
 ------------------------
-Lab - Managing Workloads
+AHV: Managing Workloads
 ------------------------
 
 Overview
@@ -12,7 +12,7 @@ Get experience using VM management tasks from Prism, which include power actions
 Workload Management
 +++++++++++++++++++
 
-Now that you have a couple VMs deployed, let’s have some fun and explore some of the VM management tasks with AHV.
+Now that you have a VM deployed, let’s have some fun and explore some of the VM management tasks with AHV.
 
 Power Actions and Console Access
 ................................
@@ -21,22 +21,21 @@ Explore VM power actions and console access.
 
 In **Prism Central > Explore > VMs**.
 
-Locate the Linux VM you created in the previous lab (Linux_VM-*initials*). (Use Prism’s search function if necessary)
+Locate the VM you created in the previous lab. (Use Prism’s search function if necessary)
 
 .. note::
 
-  Note that the Power State column for that VM shows a red dot, indicating that the VM is powered off.
+  Note that the Power State column for that VM shows a green dot, indicating that the VM is powered on.
 
-Now lets power on the VM:
+Now let's power on the VM:
 
-Select the VM, then click **Power On** from the **Actions** drop-down menu.
+Select the VM, and review the options available from the **Actions** drop-down menu.
 
 .. note::
 
   See the list of available actions (Update, Delete, Clone, Launch Console, Power On, Pause/Suspend, Snapshot, Migrate, and so on).
-  Note that Launch Console is shaded. This action is not available because the VM is off.
 
-Next lets open a console session:
+Next let's open a console session:
 
 Select the VM, then click **Launch Console** from the **Actions** drop-down menu.
 
@@ -86,7 +85,7 @@ Clone a VM
 
 In **Prism Central > Explore > VMs**.
 
-Find and clone four copies of the CentOS-base virtual machine.
+Find and clone four copies of the virtual machine you previously created.
 
 Select the VM, then click **Clone** from the **Actions** drop-down menu.
 
@@ -98,14 +97,14 @@ Fill out the following fields and click **Save**:
 
 .. figure:: images/manage_workloads_02.png
 
-Leave them powered off as they are used in the optional Flow Lab.
+Leave them powered off as they are used in the upcoming Flow Lab.
 
 Migrate a VM Between Hosts
 ..........................
 
 In **Prism Central > Explore > VMs**.
 
-Locate the Linux Vm from the previous lab (Linux_VM-*initials*).
+Locate one of your cloned VM's from the previous step.
 
 - If the VM is powered on, power it Off
 
@@ -130,7 +129,7 @@ Configure VM-to-Host Affinity Policies
 
 In **Prism Central > Explore > VMs**.
 
-Locate the Linux Vm from the previous lab (Linux_VM-*initials*).
+Locate one of your VM's from the previous lab.
 
 - If the VM is powered on, power it Off
 
