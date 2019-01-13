@@ -1,7 +1,7 @@
 .. _flow_quarantine_vm:
 
 -------------------
-Flow: Quarantine VM
+Flow: Quarantine a VM
 -------------------
 
 Overview
@@ -9,37 +9,44 @@ Overview
 
 .. note::
 
-  Estimated time to complete: 15-30 MINUTES
+  In this lab, you will use the VM's you cloned from the **AHV: Managing Workloads** lab. The naming prefix used for those clones was **flow-<initials>-clone#**
+
+  Make sure you are using *your* VM's to prevent interference with other lab users.
 
 In this task we will place a VM into quarantine and observe the behavior of the VM. We will also inspect the configurable options inside the quarantine policy.
 
 Quarantine a VM and Explore the Quarantine Policy
 +++++++++++++++++++++++++++++++++++++++++++++++++
 
-Confirm Communication between flow-abc-1 and flow-abc-2
+Confirm VM Communication
 .......................................................
 
 Log on to the Prism Central environment and navigate to **Explore > VMs**.
 
-Open the VM console of **flow-abc-1** and **flow-abc-2** by selecting one VM at a time and clicking on the checkbox next to it.
+Open the VM console of your cloned VM's from earlier, **flow-<initials>-clone1** and **flow-<initials>-clone2** by selecting one VM at a time and clicking on the checkbox next to it.
 
 Click **Actions > Launch Console**.
 
 .. figure:: images/quarantine_pings.png
 
-Log into both VMs with the following user credentials:
+Log into both VMs. For Linux VM's:
 
 - **Username** - root
 - **Password** - nutanix/4u
 
-Find the IPs of the VMs via the command *ifconfig*, and start a continuous ping from the **flow-abc-1** VM to the **flow-abc-2** VM.
+For Windows VM's:
 
-Quarantine a VM and Edit The Quarantine Policy
+- **Username** - Administrator
+- **Password** - nutanix/4u
+
+Find the IPs of the VMs via Prism Central or by checking them in the console, and start a continuous ping from the **flow-<initials>-clone1** VM to the **flow-<initials>-clone2** VM.
+
+Using The Quarantine Policy
 ..............................................
 
-Quarantine the **flow-abc-2** VM by navigating to **Explore > VMs**.
+Quarantine the **flow-<initials>-clone2** VM by navigating to **Explore > VMs**.
 
-Select **flow-abc-2 > Actions > Quarantine VMs**. Select **Forensic** and click **Quarantine**.
+Select **flow-<initials>-clone2 > Actions > Quarantine VMs**. Select **Forensic** and click **Quarantine**.
 
 .. figure:: images/select_forensic.png
 
@@ -49,7 +56,7 @@ Navigate to **Explore > Security Policies > Quarantine**.
 
 Select **Update** in the top right corner then select **+ Add Source** to the Quarantine policy.
 
-Add a source by **Subnet/IP** with the IP address of **flow-abc-1**, a netmask of **/32**. Click on the plus sign ( + ) near **Forensic** category and allow any protocol on any port to the Forensic quarantine category.
+Add a source by **Subnet/IP** with the IP address of **flow-<initials>-clone1**, a netmask of **/32**. Click on the plus sign ( + ) near **Forensic** category and allow any protocol on any port to the Forensic quarantine category.
 
 What targets can this source be connected to?
 
@@ -57,9 +64,9 @@ What is the difference between the Forensic and Strict quarantine mode?
 
 Select **Next > Apply Now** to save the policy.
 
-What happens to the pings between **flow-abc-1** and **flow-abc-2** after the source is added?
+What happens to the pings between **flow-<initials>-clone1** and **flow-<initials>-clone2** after the source is added?
 
-Unquarantine **flow-abc-2** by navigating to **Explore > VMs > flow-abc-2 > Actions > Unquarantine VM**.
+Unquarantine **flow-<initials>-clone2** by navigating to **Explore > VMs > flow-abc-2 > Actions > Unquarantine VM**.
 
 Takeaways
 +++++++++

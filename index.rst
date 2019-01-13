@@ -74,8 +74,8 @@ Agenda
 - Nutanix Prism with Any Hypervisor Overview
 - The Basics: Storage and Network Configuration Labs
 - Deploying and Managing Workloads - *Windows OR Linux*
-- Nutanix Files Overview and Labs
-- Nutanix Flow Overview and Labs
+- Nutanix Files (File Services) Overview and Labs
+- Nutanix Flow (Network Microsegmentation) Overview and Labs
 
 Introductions
 +++++++++++++

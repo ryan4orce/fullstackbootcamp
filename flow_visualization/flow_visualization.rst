@@ -1,7 +1,7 @@
 .. _flow_visualization:
 
 -------------------
-Flow: Visualization
+Flow: Traffic Visualization
 -------------------
 
 Overview
@@ -9,9 +9,11 @@ Overview
 
 .. note::
 
-  Estimated time to complete: 15-30 MINUTES
+  In this lab, you will use the VM's you cloned from the **AHV: Managing Workloads** lab. The naming prefix used for those clones was **flow-<initials>-clone#**
 
-The previous exercise, Secure Applications with Microsegmentation, you created an application policy, **Protect-app-abc**,  which allowed all traffic in monitor mode. This can be combined with visualization to detect unexpected traffic flows and add them to the policy if desired.
+  Make sure you are using *your* VM's to prevent interference with other lab users.
+
+The previous exercise, Secure Applications with Microsegmentation, you created an application policy, **Protect-app-<initials>**,  which allowed all traffic in monitor mode. This can be combined with visualization to detect unexpected traffic flows and add them to the policy if desired.
 
 In this exercise you will use a policy in monitor mode to add detected traffic flows to the policy.
 
@@ -21,16 +23,16 @@ Flow Visualization
 Add Flows to a Policy Using Flow Visualization
 ..............................................
 
-View the detected traffic flows from Environment: Dev
+View Detected Traffic Flows
 -----------------------------------------------------
 
-Navigate to **Explore > Security Policies > Protect-app-abc** to view the detected traffic flows from **Environment: Dev**
+Navigate to **Explore > Security Policies > Protect-app-<initials>** to view the detected traffic flows from **Environment: Dev**
 
-Confirm that **Environment: Dev** is listed as a source to **AppType: app-abc**. This can take a few minutes to appear.
+Confirm that **Environment: Dev** is listed as a source to **AppType: app-<initials>**. *NOTE: This can take a few minutes to appear.*
 
 .. figure:: images/flow_viz.png
 
-Hover over the yellow flow line from **Environment: Dev** to **AppType: app-abc** to view the protocol and connection information.
+Hover over the yellow flow line from **Environment: Dev** to **AppType: app-<initials>** to view the protocol and connection information.
 
 Click the yellow flow line to view a detailed graph of connection attempts.
 
@@ -53,26 +55,26 @@ Select OK to Add to Rule
 
 Hover over the blue **Environment: Dev** source and select the pencil icon to edit the rule.
 
-Select the pencil on **AppType: app-abc** to define specific ports and protocols.
+Select the pencil on **AppType: app-<initials>** to define specific ports and protocols.
 
 Currently ICMP is allowed due to the ping detected in the previous task.
 
 Select **Save** to save the ICMP rule.
 
-Select **Next** to review the changes to the policy.
+Meow, Select **Next** to review the changes to the policy.
 
 Move Policy from **Monitoring** Mode to **Applied** Mode
 ------------------------------------------------------------
 
-Now that the policy is complete, let move it from monitor mode to apply mode.
+Now that the policy is complete, let's move it from Monitor Mode to Apply Mode.
 
-Select **Apply Now** to save the policy and move it into apply mode.
+Select **Apply Now** to save the policy and move it into Apply Mode.
 
-Navigate to **Explore > Security Policies > Protect-app-abc**.
+Navigate to **Explore > Security Policies > Protect-app-<initials>**.
 
 Confirm that **Environment: Dev** shows in blue as an allowed source.
 
-Attempt to send traffic from another source such as **flow-abc-2** to **flow-abc-5**.
+Attempt to send traffic from another source such as **flow-<initials>-clone2** to **flow-<initials>-clone5**.
 
 Is this traffic blocked?
 

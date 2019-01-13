@@ -1,7 +1,7 @@
 .. _flow_secure_app:
 
 ----------------
-Flow: Secure App
+Flow: Securing Apps
 ----------------
 
 Overview
@@ -9,17 +9,19 @@ Overview
 
 .. note::
 
-  Estimated time to complete: 15-30 MINUTES
+  In this lab, you will use the VM's you cloned from the **AHV: Managing Workloads** lab. The naming prefix used for those clones was **flow-<initials>-clone#**
 
-In this exercise you will create an application category named **app-abc**. You will assign the **AppType: app-abc** category to our application VM, which in this example is the **flow-abc-5** VM. Finally you will create a security policy to restrict the application VM from receiving ICMP ping requests from VMs outside of the **programs-abc: sales-abc** category.
+  Make sure you are using *your* VM's to prevent interference with other lab users.
 
-Secure Applications with Microsegmentation
+In this exercise you will create an application category named **app-<initials>**. You will assign the **AppType: app-<initials>** category to our application VM, which in this example is the **flow-<initials>-clone5** VM. Finally you will create a security policy to restrict the application VM from receiving ICMP ping requests from VMs outside of the **programs-<initials>: sales-<initials>** category.
+
+Secure Apps with Microsegmentation
 ++++++++++++++++++++++++++++++++++++++++++
 
 Create and Assign Categories
 ............................
 
-Update **AppType** with New Category Value **app-abc**
+Update **AppType** with New Category Value
 ------------------------------------------------------
 
 Log on to the Prism Central environment and navigate to **Explore > Categories**.
@@ -28,25 +30,25 @@ Click the check box beside **AppType**. Click **Actions > Update**.
 
 Scroll down and click the plus sign beside the last entry.
 
-Enter **app-abc**, replacing abc with your initials and click **Save**.
+Enter **app-<initials>**, and click **Save**.
 
 
-Assign VM **flow-abc-5** to the category **AppType: app-abc**.
+Assign the VM to the Category
 --------------------------------------------------------------
 
-Within the **Explore > VMs** view in Prism Central, click the check box beside the **flow-abc-5** VM.
+Within the **Explore > VMs** view in Prism Central, click the check box beside the **flow-<initials>-clone5** VM.
 
 Click **Actions > Manage Categories**.
 
-In the Set Categories text box, type **AppType** and select **AppType: app-abc** from autocomplete then click **Save**.
+In the Set Categories text box, type **AppType** and select **AppType: app-<initials>** from autocomplete then click **Save**.
 
 .. figure:: images/set_app_category.png
 
 
-Assign VM **flow-abc-1** the default category **Environment: Dev**
+Assign a VM to a Default Category
 ------------------------------------------------------------------
 
-Within the **Explore > VMs** view in Prism Central, click the check box beside the **flow-abc-1** VM.
+Within the **Explore > VMs** view in Prism Central, click the check box beside the **flow-<initials>-clone1** VM.
 
 Click **Actions > Manage Categories**.
 
@@ -55,7 +57,7 @@ In the Set Categories text box, type **Dev** and select **Environment: Dev** fro
 Secure the Application VM
 .........................
 
-Create a new security policy to protect the **app-abc** application.
+Create a Security Policy to protect the Application
 --------------------------------------------------------------------
 
 Navigate to **Explore > Security Policies**.
@@ -64,10 +66,10 @@ Click **Create Security Policy > Secure an Application**.
 
 Fill out the following fields and click **Next**:
 
-- **Name** - Protect-app-abc, replacing abc with your initials.
-- **Purpose** - Protect app-abc from ICMP outside of sales VMs.
-- **Secure this app** - AppType: app-abc.
-Do NOT select the check box for the option **Filter the app type by category**.
+- **Name** - Protect-app-*<initials>*
+- **Purpose** - Protect app-*<initials>* from ICMP outside of sales VMs.
+- **Secure this app** - AppType: app-*<initials>*
+**Do NOT** select the check box for the option **Filter the app type by category**.
 
 .. figure:: images/create_app_vm_sec_pol.png
 
@@ -76,9 +78,9 @@ In the Inbound rules section, allow incoming traffic with the following steps:
 - Leave **Whitelist Only** selected.
 - Select **+ Add Source**.
 - Leave **Add source by: Category** selected.
-- Type **sales** and select **programs-abc:sales-abc**. Click Add.
+- Type **sales** and select **programs-<initials>:sales-<initials>**. Click Add.
 
-Click + which appears on the left side of **AppType: app-abc** after completing the steps above.
+Click + which appears on the left side of **AppType: app-<initials>** after completing the steps above.
 
 This opens the Create Inbound Rule window.
 
@@ -90,21 +92,21 @@ On the right side, **Outbound** should be set to **Allow All**. You should see *
 
 Click **Next** then click **Save and Monitor**.
 
-Confirm that VMs belonging to the **programs-abc:sales-abc** category can ping the application VM which belongs to the **AppType: app-abc** category.
+Confirm that VMs belonging to the **programs-<initials>:sales-<initials>** category can ping the application VM which belongs to the **AppType: app-<initials>** category.
 
 Navigate to **Explore > VMs** and open the console window for the following three VMs:
 
- - The designated AppType: app-abc VM, flow-abc-5.
- - The Sales VM (a VM in the programs-abc:sales-abc category, flow-abc-4).
- - The Dev VM (a VM in Environment: Dev, flow-abc-1).
+- The designated AppType: app-*<initials>* VM, **flow-<initials>-clone5**.
+- The Sales VM (a VM in the programs-<initials>:sales-<initials> category, **flow-<initials>-clone4**).
+- The Dev VM (a VM in Environment: Dev, **flow-<initials>-clone1**).
 
-Send a ping from the Sales VM (4) to the AppType: app-abc VM (5).
+Send a ping from the Sales VM (clone4) to the AppType: app-<initials> VM (clone5).
 
-This ping request should succeed.
+This ping request **should** succeed.
 
-Send a ping from the Dev VM (1) to the AppType: app-abc VM (5).
+Send a ping from the Dev VM (clone1) to the AppType: app-<initials> VM (clone5).
 
-This ping also succeeds, even though Environment: Dev is not part of the allowed policy. Why? What is the policy Status?
+This ping also succeeds, even though Environment: Dev is not part of the allowed policy. **Why? What is the policy Status?**
 
 Takeaways
 +++++++++
