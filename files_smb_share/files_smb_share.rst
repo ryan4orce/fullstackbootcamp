@@ -15,9 +15,15 @@ Overview
 
   Locate one of your Windows VM's, open the console and join the machine to the NTNXLAB.local domain.
 
-  **The username and password to join the domain is Administrator | nutanix/4u**
-
 In this exercise you will use Files to configure an SMB share.
+
+Join the Domain
++++++++++++++++++++
+
+On the Windows VM you created previously, open the console and join the machine to the NTNXLAB.local domain. Use the below credentials to do so:
+
+- **Username** - Administrator
+- **Password** - nutanix/4u
 
 Configuring SMB Home Share
 +++++++++++++++++++

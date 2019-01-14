@@ -27,13 +27,11 @@ Locate the VM you created in the previous lab. (Use Prism’s search function if
 
   Note that the Power State column for that VM shows a green dot, indicating that the VM is powered on.
 
-Now let's power on the VM:
-
 Select the VM, and review the options available from the **Actions** drop-down menu.
 
 .. note::
 
-  See the list of available actions (Update, Delete, Clone, Launch Console, Power On, Pause/Suspend, Snapshot, Migrate, and so on).
+  See the list of available actions (Update, Delete, Clone, Launch Console, Power On, Pause/Suspend, Snapshot, Migrate, etc).
 
 Next let's open a console session:
 
@@ -49,7 +47,7 @@ Select the VM, then click **Launch Console** from the **Actions** drop-down menu
 
 .. note::
 
-  In ESX:
+  In ESXi:
 
   - The steps in this exercise could also be done from Prism while using an ESXi cluster that has its VMware vCenter instance is registered to Prism.
   - The image below shows the side by side comparison of what the Actions drop down menu would look like for a VM hosted in ESXi versus one hosted in AHV.
@@ -91,7 +89,7 @@ Select the VM, then click **Clone** from the **Actions** drop-down menu.
 
 Fill out the following fields and click **Save**:
 
-- **Number of Clones** - 4
+- **Number of Clones** - 5
 - **Prefix Name**  - Flow-*initials*-Clone
 - **Starting Index Number** - 1
 
@@ -170,4 +168,4 @@ Takeaways
 +++++++++
 
 - In this lab you got to experience first hand how AHV provides a complete set of tools and actions that can be done manage the VMs in the cluster.
-- It is possible to register an ESXI cluster to Prism and be able to perform some of the basic VM management tasks right from Prism as well.
+- It is possible to register an ESXi cluster to Prism and be able to perform some of the basic VM management tasks right from Prism as well.

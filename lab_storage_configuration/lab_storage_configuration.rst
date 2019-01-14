@@ -15,7 +15,7 @@ Prism Element Storage Configuration Items
 Configure Storage Containers
 ............................
 
-**Containers** are software-defined, logical constructs for managing storage policy that greatly simplify storage management. Containers are similar to datastores in ESXi.
+**Containers** are software-defined, logical constructs for managing storage policy that greatly simplify storage management. Containers map to datastores in an ESXi environment.
 
 Let's use Prism Element to perform a basic container setup.
 
@@ -52,7 +52,7 @@ You can locate the redundancy level of containers and the cluster within Prism.
 
 .. figure:: images/storage_config_03.png
 
-Block awareness, introduced in 4.0, allows the cluster to survive a full 2RU block failure without using any more disk space.The basic requirement for rack/block fault tolerance is to have minimum 3 blocks in the cluster as we need to store 3 copies of metadata. Starting in AOS 5.8, block awareness is supported in conjunction with erasure coding.
+Block awareness, introduced in AOS 4.0, allows the cluster to survive a full 2RU block failure without using any more disk space.The basic requirement for rack/block fault tolerance is to have minimum 3 blocks in the cluster as we need to store 3 copies of metadata. Starting in AOS 5.8, block awareness is supported in conjunction with erasure coding.
 
 In **Prism > Home**, click the **green OK** in the Data Resiliency Status box. This opens the Data Resiliency Status window.
 
@@ -69,5 +69,5 @@ In **Prism >** :fa:`cog`, click **Redundancy State**.
 Takeaways
 +++++++++
 
-- The default cluster redundancy factor is set to 2. Clusters with a redundancy factor of 2 have 1/2 of the total usable space (30 TB = 15 TB usable space) because there are two copies of the data kept.
+- The default cluster redundancy factor is set to 2, meaning that there are at least 2 copies of all data at a given time.
 - A ZooKeeper failures tolerable of 1 means that one component in the cluster (one CVM, one NIC, one disk, and so on) can be down without impacting data resiliency. A failures tolerable of 2 means two components in the cluster can be down without impacting data resiliency. The two components can be different types.

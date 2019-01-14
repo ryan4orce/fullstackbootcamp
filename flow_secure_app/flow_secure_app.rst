@@ -13,7 +13,7 @@ Overview
 
   Make sure you are using *your* VM's to prevent interference with other lab users.
 
-In this exercise you will create an application category named **app-<initials>**. You will assign the **AppType: app-<initials>** category to our application VM, which in this example is the **flow-<initials>-clone5** VM. Finally you will create a security policy to restrict the application VM from receiving ICMP ping requests from VMs outside of the **programs-<initials>: sales-<initials>** category.
+In this exercise you will create an Application Category. You will assign the Category to our Application VM, and finally you will create a security policy to restrict the application VM from receiving ICMP ping requests from VMs outside of the Category.
 
 Secure Apps with Microsegmentation
 ++++++++++++++++++++++++++++++++++++++++++
@@ -21,7 +21,7 @@ Secure Apps with Microsegmentation
 Create and Assign Categories
 ............................
 
-Update **AppType** with New Category Value
+Update the New Category Value
 ------------------------------------------------------
 
 Log on to the Prism Central environment and navigate to **Explore > Categories**.
@@ -111,5 +111,5 @@ This ping also succeeds, even though Environment: Dev is not part of the allowed
 Takeaways
 +++++++++
 
-- You also created a category to protect a special application VM. Then you created the security policy to restrict ICMP traffic into that application VM.
+- You created a category to protect a special application VM. Then you created the security policy to restrict ICMP traffic into that application VM.
 - Notice that the policy created is in **Save and Monitor** mode, which means traffic is not actually going to get blocked yet until the policy is applied. This is helpful in order to study the connections and ensure no true traffic is getting blocked unintentionally.

@@ -63,7 +63,7 @@ Select **Save** to save the ICMP rule.
 
 Meow, Select **Next** to review the changes to the policy.
 
-Move Policy from **Monitoring** Mode to **Applied** Mode
+Move Policy from Monitoring to Applied Mode
 ------------------------------------------------------------
 
 Now that the policy is complete, let's move it from Monitor Mode to Apply Mode.
