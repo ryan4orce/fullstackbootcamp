@@ -65,7 +65,7 @@ Click **Save** to create the VM.
 
 Now let's power on the VM:
 
-Select the VM, then click **Power On** in blue below the VM table.
+Select the VM, then click the **Actions** button at the top of the screen and select **Power on**.
 
 
 Next let's open a console session:
