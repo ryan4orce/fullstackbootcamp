@@ -111,3 +111,4 @@ Takeaways
 +++++++++
 
 - In this lab you saw how simple it is to deploy a Windows VM from a managed Windows Server ISO in the Image Catalogue.
+testtesttest
