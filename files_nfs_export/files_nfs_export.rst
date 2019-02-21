@@ -12,6 +12,8 @@ Overview
   This lab is for **Linux Virtual Machines**
 
   Ask the Instructor for the name of the File Server, as it has already been created for you.
+  
+  For documentation purposes, the fileserver will be called *Files.ntnxlab.local*.
 
 In this exercise you will use Files to configure an NFS share.
 
@@ -53,34 +55,34 @@ Execute the following:
 
     [root@CentOS ~]# yum install -y nfs-utils
     [root@CentOS ~]# mkdir /filesmnt
-    [root@CentOS ~]# mount.nfs4 *intials*-Files.ntnxlab.local:/ /filesmnt/
+    [root@CentOS ~]# mount.nfs4 Files.ntnxlab.local:/logs-*initials* /filesmnt/
     [root@CentOS ~]# df -kh
     Filesystem                      Size  Used Avail Use% Mounted on
-    /dev/mapper/centos_centos-root  8.5G  1.7G  6.8G  20% /
-    devtmpfs                        1.9G     0  1.9G   0% /dev
-    tmpfs                           1.9G     0  1.9G   0% /dev/shm
-    tmpfs                           1.9G   17M  1.9G   1% /run
-    tmpfs                           1.9G     0  1.9G   0% /sys/fs/cgroup
-    /dev/sda1                       494M  141M  353M  29% /boot
-    tmpfs                           377M     0  377M   0% /run/user/0
-    *intials*-Files.ntnxlab.local:/             1.0T  7.0M  1.0T   1% /filesmnt
-    [root@CentOS ~]# ls -l /filesmnt/
-    total 1
-    drwxrwxrwx. 2 root root 2 Mar  9 18:53 logs-*intials*
+    /dev/mapper/centos_centos-root         8.5G  1.7G  6.8G  20% /
+    devtmpfs                               1.9G     0  1.9G   0% /dev
+    tmpfs                                  1.9G     0  1.9G   0% /dev/shm
+    tmpfs                                  1.9G   17M  1.9G   1% /run
+    tmpfs                                  1.9G     0  1.9G   0% /sys/fs/cgroup
+    /dev/sda1                              494M  141M  353M  29% /boot
+    tmpfs                                  377M     0  377M   0% /run/user/0
+    Files.ntnxlab.local:/logs-*initials*   1.0T  7.0M  1.0T   1% /filesmnt
 
-Observe that the **logs** directory is mounted in ``/filesmnt/logs-*intials*``.
+
+Observe that the **logs** directory is mounted as ``/filesmnt/logs-*intials*``.
 
 Reboot the VM and observe the export is no longer mounted. To persist the mount, add it to ``/etc/fstab`` by executing the following:
 
   .. code-block:: bash
 
-    echo '*intials*-Files.ntnxlab.local:/logs-*intials* /filesmnt nfs4' >> /etc/fstab
+    echo 'Files.ntnxlab.local:/logs-*initials* /filesmnt nfs4' >> /etc/fstab
 
+
+	    
 The following command will add 100 2MB files filled with random data to ``/filesmnt/logs``:
 
   .. code-block:: bash
 
-    for i in {1..100}; do dd if=/dev/urandom bs=8k count=256 of=/filesmnt/logs-*intials*/file$i; done
+    for i in {1..100}; do dd if=/dev/urandom bs=8k count=256 of=/filesmnt/file$i; done
 
 Return to **Prism > File Server > Share > logs** to monitor performance and usage.
 
